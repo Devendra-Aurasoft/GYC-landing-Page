@@ -13,10 +13,7 @@ body {
     background-color: aliceblue(--light);
 }
 
-nav
-{
-    border-bottom: 2px solid var(--primary);
-}
+
 #contact
 {
     background-color: var(--primary);
@@ -51,7 +48,7 @@ nav
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 10px 5px;
+    padding: 10px 8px;
 
 }
 
@@ -91,7 +88,20 @@ nav
     border-radius: 0px;
     box-shadow: 2px 5px 10px rgb(188, 201, 202);
 }
-
+.owl-nav{
+    display:flex;
+    justify-content: center;
+}
+.owl-prev,.owl-next
+{
+   padding: 8px 10px;
+   margin: 10px;
+   color: #FFA500;
+   font-weight: bold;
+   font-size: 20px;
+   background-color: rgb(211, 205, 205);
+   border-radius: 50%;
+}
 .form input[type="text"],
 .form input[type="password"],
 .form input[type="number"],
@@ -278,6 +288,15 @@ nav .nav-link
 
 .navbar {
     background-color: #fff !important;
+    
 }
-
-
+.Policy_text h4,
+.privacypage h4
+{
+color: var(--orange);
+}
+.Policy_text h3,
+.privacypage h3
+{
+color: var(--primary);
+}
