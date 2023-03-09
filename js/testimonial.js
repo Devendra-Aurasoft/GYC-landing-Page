@@ -2,9 +2,9 @@
 $(document).ready(async function () {
     // Api call
     const result = await getDataHandler('/get_testimonials.php', {}, 'GET');
-    console.log('result : ', result);
+   
     // call updateTestimonialsData function
-    if (result.success){
+    if (result.success) {
         await updateTestimonialsData(result.testimonials);
         // initialized Testimonial Carousel Function call
         initializedTestimonialCarousel();
@@ -26,9 +26,11 @@ const updateTestimonialsData = async (testimonial) => {
 
     let html = ``;
     testimonial.map((item) => {
+        
         html += `<div class="testimonial-item">
                                 <p class="fs-4 fw-normal"><i class="fa fa-quote-left text-secondary me-3"></i>${item.description}</p>
                                 <div class="d-flex align-items-center">
+                                <img class="img-fluid p-1 bg-secondary" src=${item.imagepath + item.image} alt="">
                                     <div class="ps-3">
                                         <h3>${item.title}</h3>
                                     </div>

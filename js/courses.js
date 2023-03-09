@@ -2,7 +2,7 @@
 $(document).ready(async function () {
     // Api call
     const result = await getDataHandler('/get_testimonials.php', {}, 'GET');
-    console.log('result : ', result);
+
     // call updatecourseData function
     if (result.success){
         await updatecourseData(result.testimonials);
