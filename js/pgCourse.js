@@ -46,7 +46,7 @@ const updatePGCourseData = async (colleges = []) => {
         <img  src="${item.college_img_path + item.college_image}"  alt="${item.college_name}"></img>
       </div>
         <div class="card-body">
-          <h5 class="card-title">${item.college_name && item.city}</h5>
+          <h5 class="card-title">${item.college_name} ${item.college_type}</h5>
           <p class="card-text">${item?.description ? window.atob(item.description) : 'No Description Data'}</p>
           <a href="#" class="btn btn-primary">Read More</a>
         </div>
