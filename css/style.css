@@ -320,8 +320,8 @@ select,
 optgroup,
 textarea {
 
-    color: black !important;
-    border-bottom: 4px solid black;
+    /* color: black !important; */
+    border-bottom: 4px solid black !important;
 }
 
 input,
@@ -331,6 +331,7 @@ optgroup,
 textarea {
     height: 50px !important;
     padding: 0px 20px !important;
+    border-bottom: 4px solid transparent;
     /* border-radius: 50px !important; */
     color: white !important;
     border: none;
@@ -424,8 +425,21 @@ textarea {
     transition: 0.7s;
     opacity: 0.8;
 }
+#testimonial-container{
+    box-shadow: 5px 10px 15px rgb(221, 219, 219);
+}
+#Testimonal-heading
+{
+   text-align: center; 
+}
+.course-section .btn-box
+{
+    text-align: center;
+}
 
-.testimonial-item{
-    display: flex;
+.course-section .card-body
 
+{
+    
+    text-overflow: ellipsis;
 }
