@@ -117,14 +117,14 @@
 
     <section class="course-section container" id="Courses">
         <div class="btn-box">
-        <div class="btn-group " role="group" aria-label="Button group with nested dropdown">
-            <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    UG
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="ug-container">
-                    <!-- <li><a class="dropdown-item" href="#">BBA / BMS</a></li>
+            <div class="btn-group " role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        UG
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="ug-container">
+                        <!-- <li><a class="dropdown-item" href="#">BBA / BMS</a></li>
                         <li><a class="dropdown-item" href="#"> B.Com</a></li>      
                         <li><a class="dropdown-item" href="#">B.Arch</a></li>
                         <li><a class="dropdown-item" href="#">Bachelors in Hotel Management</a></li>
@@ -140,15 +140,15 @@
                         <li><a class="dropdown-item" href="#">B.Tech / BE</a></li>
                         <li><a class="dropdown-item" href="#">BJMC</a></li>
                         <li><a class="dropdown-item" href="#"> Others (UG)</a></li> -->
-                </ul>
-            </div>
-            <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    PG
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="pg-container">
-                    <!--                 <li><a class="dropdown-item" href="#">MBA / PGDM</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        PG
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="pg-container">
+                        <!--                 <li><a class="dropdown-item" href="#">MBA / PGDM</a></li>
                         <li><a class="dropdown-item" href="#">M.Tech / ME</a></li>
                         <li><a class="dropdown-item" href="#">M.Com</a></li>
                         <li><a class="dropdown-item" href="#">LLM</a></li>
@@ -161,15 +161,15 @@
                         <li><a class="dropdown-item" href="#">MSW (Social Work)</a></li>
                         <li><a class="dropdown-item" href="#">MJMC</a></li>
                         <li><a class="dropdown-item" href="#">Others (PG)</a></li> -->
-                </ul>
-            </div>
-            <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Coaching
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="coaching-container">
-                    <!-- <li><a class="dropdown-item" href="#"> CA/CS</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Coaching
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="coaching-container">
+                        <!-- <li><a class="dropdown-item" href="#"> CA/CS</a></li>
                      <li><a class="dropdown-item" href="#"> CAT/GMAT/XAT/MAT Preparation</a></li>
                      <li><a class="dropdown-item" href="#"> After 12 th Law Entrance Exam</a></li>
                      <li><a class="dropdown-item" href="#"> NEET</a></li>
@@ -180,9 +180,9 @@
                      <li><a class="dropdown-item" href="#"> Animation</a></li>
                      <li><a class="dropdown-item" href="#"> After 12 th Design Entrance Exam</a></li>
                      <li><a class="dropdown-item" href="#"> Others coachings</a></li> -->
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>
         <div class="row mt-4" id="course-container">
             <div class="col-sm-3">
@@ -349,9 +349,10 @@
 
 
             Email.send({
-                SecureToken: "c9c9d837-0b35-4506-ae60-4d1c8cfbe41b",
-                To: 'vishal.aurasoft@gmail.com',
-                From: "vishal.aurasoft@gmail.com",
+
+                SecureToken: "321d13fd-4104-4be9-a0ad-1929fd9c577f",
+                To: 'websiteygm@gmail.com',
+                From: "websiteygm@gmail.com",
                 Subject: "mail from contact form",
                 Body: "Name :- " + name + "<br/>Contact :- " + contact + "<br/>Email :- " + email + "<br/>Country :- " + country + "<br/>Course :- " + course + "<br/>City :- " + city
             }).then(
