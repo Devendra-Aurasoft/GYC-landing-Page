@@ -84,7 +84,7 @@
 
                     <div class="form">
                         <h2>ENQUIRE NOW!</h2>
-                        <form onsubmit="calldata()">
+                        <form>
                             <input type="text" placeholder="Username" id="username">
                             <input type="number" placeholder="number" id="contactno">
                             <input type="email" placeholder="email" id="email">
@@ -102,7 +102,7 @@
                             </select>
                             <input type="text" placeholder="city" id="city">
 
-                            <button type="submit">Submit</button>
+                            <button type="button" onclick="calldata()">Submit</button>
                         </form>
                     </div>
 
@@ -347,6 +347,7 @@
             var course = document.getElementById("course").value;
             var city = document.getElementById("city").value;
 
+            console.log(name,contact,email,country,course,city);
 
             Email.send({
 

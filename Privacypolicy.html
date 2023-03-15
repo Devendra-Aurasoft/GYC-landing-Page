@@ -363,29 +363,6 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <!-- owl carousel -->
 
-    <script src="https://smtpjs.com/v3/smtp.js"> </script>
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-        function calldata() {
-            var name = document.getElementById("username").value;
-            var contact = document.getElementById("contactno").value;
-            var email = document.getElementById("email").value;
-            var country = document.getElementById("country").value;
-            var course = document.getElementById("course").value;
-            var city = document.getElementById("city").value;
-
-
-            Email.send({
-                SecureToken: "c9c9d837-0b35-4506-ae60-4d1c8cfbe41b",
-                To: 'vishal.aurasoft@gmail.com',
-                From: "vishal.aurasoft@gmail.com",
-                Subject: "mail from contact form",
-                Body: "Name :- " + name + "<br/>Contact :- " + contact + "<br/>Email :- " + email + "<br/>Country :- " + country + "<br/>Course :- " + course + "<br/>City :- " + city
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="./config/config.js"></script>
