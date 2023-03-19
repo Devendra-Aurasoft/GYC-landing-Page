@@ -1,3 +1,3 @@
 let config = {
-    api_url: 'https://getyourcollege.in/gyc_admin/api'
+    api_url: 'https://admin.getyourcollege.in/api'
 }

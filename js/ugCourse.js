@@ -29,30 +29,36 @@ const updateUGCoursesData = async (courses) => {
 const getDataByUGCourseClickHandler = async (coursename) => {
   if (coursename) {
     // Api call
-    const result = await getDataHandler(`get_colleges_by_course_name.php?course=${coursename}`, {}, 'GET');
-    await updateCollegesData(result.colleges);
+    const result
+      = await getDataHandler(`get_colleges_by_course_name.php?course=${coursename}`, {}, 'GET');
+    await getDataByReadClickHandler(result.colleges);
   }
 }
+
 /**
  * update College Data
  * @param {*} colleges 
  */
-const updateCollegesData = async (colleges = []) => {
+const getDataByReadClickHandler = async (colleges = []) => {
   console.log('colleges : ', colleges);
   let html = ``;
   colleges.map((item) => {
+    let imageSrc = "img/dummy_image.jpg";
+    if (item.college_img_path && item.college_image) {
+      imageSrc = item.college_img_path + item.college_image;
+    }
     html += `<div class="col-sm-4">
-        <div class="card" style="width: 18rem;">
+      <div class="card" style="wcollege_idth: 18rem;">
         <div class="college-image" >
-          <img  src="${item.college_img_path + item.college_image}"  alt="${item.college_name}"></img>
+          <img src=${imageSrc}></img>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">${item.college_name} ${item.college_type}</h5>
-          <p class="card-text small_disc">${item?.description ? window.atob(item.description) : 'No Description Data'}</p>
-          <a href="#" class="btn btn-primary">Read More</a>
-        </div>
+      <div class="card-body">
+        <h5 class="card-title">${item.college_name} </h5>
+        <p class="card-text small_disc">${item.seo_description}</p>
+        <button class="btn btn-primary" id="myButton" onclick='getDataByClick("${item.college_slug}")'>Read More</button>
       </div>
-    </div>`;
+    </div>
+  </div>`;
   });
   const courseContainer = document.getElementById("course-container");
   courseContainer.innerHTML = html ? html : 'No data available for this category';

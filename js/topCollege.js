@@ -45,7 +45,6 @@ const updateCollegeData = async (college = []) => {
             <div class="card-body top_college_card">
                 <h5 class="card-title ">${item.college_name}</h5><small>${item.address}</small><br><a href="#"
                     class="btn BG_button mt-2">
-                    <a href="/Institutions/moreabout/renaissance-university"> Read More</a></a>
             </div>
         </div>
     </div>`;
