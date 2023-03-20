@@ -40,7 +40,7 @@ const getDataByCategoryIDClickHandler = async (categoryID = 1) => {
 const updateCollegeData = async (college = []) => {
     let html = ``;
     college.map((item) => {
-        html += `<div class="col-sm-4 mb-5 ">
+        html += `<div class="col-sm-4 mb-md-5 ">
         <div class="card">
             <div class="card-body top_college_card">
                 <h5 class="card-title ">${item.college_name}</h5><small>${item.address}</small><br><a href="#"

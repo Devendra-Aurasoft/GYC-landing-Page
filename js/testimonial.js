@@ -28,11 +28,11 @@ const updateTestimonialsData = async (testimonial) => {
     testimonial.map((item) => {
         
         html += `<div class="testimonial-item">
-                                <p class="fs-4 fw-normal"><i class="fa fa-quote-left text-secondary me-3"></i>${item.description}</p>
+                                <p class="fs-4 testimonial-text  fw-normal"><i class="fa fa-quote-left text-secondary me-3"></i>${item.description}</p>
                                 <div class="d-flex align-items-center">
                                 <img class="img-fluid p-1 bg-secondary" src=${item.imagepath + item.image} alt="">
-                                    <div class="ps-3">
-                                        <h3>${item.title}</h3>
+                                    <div class="ps-3 ">
+                                        <h3 class="testimonial_name">${item.title}</h3>
                                     </div>
                                 </div>
                             </div>
