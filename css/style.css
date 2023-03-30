@@ -56,11 +56,6 @@ li {
     transition: .5s;
 }
 
-.sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 10px 8px;
-
-}
-
 .nav-link {
     color: #000 !important;
     font-family: "Roboto Condensed", sans-serif;
@@ -72,8 +67,8 @@ li {
     color: #3f3f75 !important;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link:hover span,
+.navbar-light .navbar-nav .nav-link.active span {
     color: var(--primary) !important;
     border-bottom: 2px solid var(--primary) !important;
 }
@@ -201,21 +196,21 @@ li {
     color: red !important;
 }
 
-.navbar-toggler
-{
+.navbar-toggler {
     height: 30px !important;
     width: 30px !important;
     font-size: 20px !important;
     padding: 0px !important;
 }
-.navbar-toggler-icon
-{
+
+.navbar-toggler-icon {
     width: 15px !important;
     height: 15px !important;
 }
 
 
 @media (max-width: 991.98px) {
+
     .bg-quote {
         background-size: cover;
     }
@@ -227,7 +222,7 @@ li {
 
     .navbar-light .navbar-nav .nav-link {
         margin-left: 0;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 }
 
@@ -245,12 +240,18 @@ li {
 
 @media (max-width:425px) {
 
-    .testimonial-text
-    {
+    .form h2 {
+        color: #333333;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0 0 30px;
+    }
+
+    .testimonial-text {
         font-size: 15px !important;
     }
-    .testimonial_name
-    {
+
+    .testimonial_name {
         font-size: 20px !important;
     }
 
@@ -288,6 +289,7 @@ li {
 }
 
 @media (min-width: 992px) {
+    /*     
     .navbar-light .navbar-nav .nav-link::before {
         position: absolute;
         content: "";
@@ -297,13 +299,13 @@ li {
         left: 50%;
         border-bottom: 2px solid var(--primary);
         transition: .5s;
-    }
+    } */
 
-    .navbar-light .navbar-nav .nav-link:hover::before,
-    .navbar-light .navbar-nav .nav-link.active::before {
+    /* .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before{
         width: 100%;
         left: 0;
-    }
+    } */
 }
 
 #home {
@@ -343,9 +345,11 @@ button:hover,
 select,
 optgroup,
 textarea {
-
-    /* color: black !important; */
     border-bottom: 4px solid black !important;
+}
+
+.navbar .hamburger {
+    border-bottom: 0px !important;
 }
 
 input,
@@ -395,6 +399,7 @@ textarea {
     padding: 0px 0px;
     margin-top: 10px;
 }
+
 .top_college_card a:hover {
     box-shadow: 2px 5px 10px rgb(174, 180, 209);
 }
@@ -449,21 +454,20 @@ textarea {
     transition: 0.7s;
     opacity: 0.8;
 }
-#testimonial-container{
+
+#testimonial-container {
     box-shadow: 5px 10px 15px rgb(221, 219, 219);
 }
-#Testimonal-heading
-{
-   text-align: center; 
-}
-.course-section .btn-box
-{
+
+#Testimonal-heading {
     text-align: center;
 }
 
-.course-section .card-body
+.course-section .btn-box {
+    text-align: center;
+}
 
-{
-    
+.course-section .card-body {
+
     text-overflow: ellipsis;
 }
